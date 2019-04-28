@@ -1,0 +1,20 @@
+<div class="container input1">
+  <table>
+    <tr class="row" *ngFor="let i of left">
+      <td class="col" *ngFor="let color of i.slice(1,i.lenght); let counter=index " [ngStyle]="{'background-color':color}">{{color}}</td>
+    </tr>
+  </table>
+</div>
+<div>
+  <input (keyup)="getOutput($event)">
+  <p>{{queryOUTPUT}}</p>
+</div>
+<div class="container output">
+  <table>
+    <tr class="row" *ngFor="let i of output;">
+      <td class="col" *ngFor="let color of i ;  let counter=index " [ngStyle]="{'background-color':color}">{{color}}</td>
+    </tr>
+  </table>
+  <br>
+  <br>
+</div>

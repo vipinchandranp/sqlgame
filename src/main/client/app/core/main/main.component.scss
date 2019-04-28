@@ -1,0 +1,32 @@
+table{
+    font-family:Arial;
+    font-size: 5px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1.7em;
+    text-align:center;
+    border-collapse:collapse;
+    
+}
+
+table  th:empty{
+    background:transparent;
+    border:none;
+}
+
+table td{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 7px 0 rgba(0, 0, 0, 0.19);
+    cursor: move;
+}
+
+.input1{
+    float: left;
+}
+
+.output{
+    float: right;
+}
